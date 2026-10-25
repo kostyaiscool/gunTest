@@ -216,3 +216,7 @@ migrations/versions/__pycache__/
 # Byte-compiled
 *.pyo
 *.pyd
+# Game template
+settings.json
+settings.json.tmp
+screenshots/

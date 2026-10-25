@@ -1,0 +1,44 @@
+{
+  "_name": "Русский",
+
+  "game.title": "Шаблон игры",
+
+  "menu.play": "Играть",
+  "menu.settings": "Настройки",
+  "menu.quit": "Выход",
+  "menu.quit_confirm": "Выйти из игры?",
+  "menu.hint": "Стрелки / WASD / мышь — выбор,  Enter — подтвердить,  Esc — назад,  F11 — полный экран",
+
+  "pause.title": "Пауза",
+  "pause.resume": "Продолжить",
+  "pause.restart": "Начать заново",
+  "pause.main_menu": "Главное меню",
+  "pause.main_menu_confirm": "Выйти в меню? Прогресс будет потерян.",
+
+  "settings.title": "Настройки",
+  "settings.fullscreen": "Полный экран",
+  "settings.show_fps": "Показывать FPS",
+  "settings.master_volume": "Общая громкость",
+  "settings.music_volume": "Музыка",
+  "settings.sfx_volume": "Звуки",
+  "settings.language": "Язык",
+  "settings.controls": "Управление",
+
+  "controls.title": "Управление",
+  "controls.reset": "Сбросить по умолчанию",
+  "controls.press_key": "Нажмите клавишу для «{action}»  (Esc — отмена)",
+
+  "action.up": "Вверх",
+  "action.down": "Вниз",
+  "action.left": "Влево",
+  "action.right": "Вправо",
+
+  "ui.back": "Назад",
+  "ui.yes": "Да",
+  "ui.no": "Нет",
+  "ui.on": "Вкл",
+  "ui.off": "Выкл",
+
+  "hud.score": "Счёт: {score}",
+  "hud.hint": "Собирайте монетки.  Esc / P — пауза"
+}

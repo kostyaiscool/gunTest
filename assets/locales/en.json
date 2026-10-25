@@ -1,0 +1,44 @@
+{
+  "_name": "English",
+
+  "game.title": "Game Template",
+
+  "menu.play": "Play",
+  "menu.settings": "Settings",
+  "menu.quit": "Quit",
+  "menu.quit_confirm": "Quit the game?",
+  "menu.hint": "Arrows / WASD / mouse — select,  Enter — confirm,  Esc — back,  F11 — fullscreen",
+
+  "pause.title": "Paused",
+  "pause.resume": "Resume",
+  "pause.restart": "Restart",
+  "pause.main_menu": "Main menu",
+  "pause.main_menu_confirm": "Return to menu? Progress will be lost.",
+
+  "settings.title": "Settings",
+  "settings.fullscreen": "Fullscreen",
+  "settings.show_fps": "Show FPS",
+  "settings.master_volume": "Master volume",
+  "settings.music_volume": "Music",
+  "settings.sfx_volume": "Sounds",
+  "settings.language": "Language",
+  "settings.controls": "Controls",
+
+  "controls.title": "Controls",
+  "controls.reset": "Reset to defaults",
+  "controls.press_key": "Press a key for \"{action}\"  (Esc — cancel)",
+
+  "action.up": "Up",
+  "action.down": "Down",
+  "action.left": "Left",
+  "action.right": "Right",
+
+  "ui.back": "Back",
+  "ui.yes": "Yes",
+  "ui.no": "No",
+  "ui.on": "On",
+  "ui.off": "Off",
+
+  "hud.score": "Score: {score}",
+  "hud.hint": "Collect the coins.  Esc / P — pause"
+}
