@@ -6,6 +6,7 @@ import pygame as pg
 from engine import Scene, register_scene
 from game.entities.coin import Coin
 from game.entities.player import Player
+from game.entities.weapon import Weapon
 
 
 @register_scene("gameplay")
@@ -18,6 +19,7 @@ class GameplayScene(Scene):
         super().__init__(app)
         self.bounds = app.screen_rect
         self.player = Player(self.assets.image("player.png", (48, 48)), self.bounds.center, speed=360)
+        self.weapon = Weapon(self.assets.image("bow.png", (48, 48)), self.player)
         self.coins = [Coin(self.random_point()) for _ in range(self.COINS)]
         self.score = 0
         self.hud_font = self.assets.font(28)
@@ -46,6 +48,7 @@ class GameplayScene(Scene):
 
     def update(self, dt: float) -> None:
         self.player.update(dt, self.input.vector(), self.bounds)
+        self.weapon.update()
         for coin in self.coins:
             coin.update(dt)
             if self.player.rect.colliderect(coin.rect):
@@ -58,6 +61,7 @@ class GameplayScene(Scene):
         for coin in self.coins:
             coin.draw(surface)
         self.player.draw(surface)
+        self.weapon.draw(surface)
         self.draw_hud(surface)
 
     def draw_hud(self, surface: pg.Surface) -> None:

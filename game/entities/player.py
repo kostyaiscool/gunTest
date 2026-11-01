@@ -1,4 +1,5 @@
 import pygame as pg
+import math
 
 
 class Player(pg.sprite.Sprite):
@@ -16,5 +17,14 @@ class Player(pg.sprite.Sprite):
         self.pos.y = max(bounds.top + half_h, min(bounds.bottom - half_h, self.pos.y))
         self.rect.center = (round(self.pos.x), round(self.pos.y))
 
+        mouse = pg.Vector2(pg.mouse.get_pos())
+        delta = mouse - self.pos
+
+        self.angle = math.atan2(delta.y, delta.x)
+
+
     def draw(self, surface: pg.Surface) -> None:
         surface.blit(self.image, self.rect)
+
+    def direction(self):
+        pass #управление мышкой
